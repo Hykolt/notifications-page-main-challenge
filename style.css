@@ -1,0 +1,204 @@
+html{
+    margin: 0;
+    font-size: 13px;
+    font-family: 'Plus Jakarta Sans', sans-serif;
+}
+
+*, *:after , *:before{
+    
+    box-sizing: border-box;
+}
+
+.main-container{
+   
+    width: 600px;
+    height: auto;
+    background-color: white;
+    border-radius: 15px;
+    box-shadow: 5px 5px 10px hsl(211, 68%, 94%);
+    margin: auto;
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+
+body{
+    background-color: hsl(210, 60%, 98%);
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+
+.header{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    margin: 20px;
+    align-items: center;
+}
+
+#hr-1{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-gap: 5px;
+    align-items: center;
+}
+#hr-2{
+    justify-self: flex-end;
+}
+#hr-1 span{
+    font-weight: 800;
+    font-size: 20px;
+    color: hsl(224, 21%, 14%);
+}
+
+#hr-2 button{
+    text-align: right;
+    background-color: transparent;
+    border: none;
+}
+
+#notis{
+    width: 20px;
+    height: 20px;
+    background-color: hsl(219, 85%, 26%);
+    color: white;
+    border-radius: 4px;
+    text-align: center;
+    line-height: 20px;
+}
+
+#hr-2 > button:hover{
+    cursor: pointer;
+    color: hsl(219, 85%, 26%);
+
+}
+#hr-2 > button:active{
+    color: grey;
+    scale: 1.1;
+}
+.notifications{
+    width: 100%;
+}
+.body-div{
+    margin: 20px;
+    display: grid;
+    grid-template-rows: auto;
+    grid-gap: 5px;
+}
+
+.notifications{
+    display: grid;
+    grid-template-columns: 12% 88%;
+    border-radius: 10px;
+}
+.unread{
+    background-color:  hsl(210, 60%, 98%);
+}
+
+.images{
+    width: 40px;
+    margin: 10px;
+}
+
+.extras{
+    display: grid;
+    grid-template-rows: 1fr 1fr;
+    align-items: center;
+    grid-gap: 5px;
+
+}
+
+.message{
+    align-self: flex-end;
+    color: hsl(219, 12%, 42%);
+}
+.time-rc{
+    align-self: flex-start;
+    color: hsl(219, 12%, 42%);
+}
+
+.message #names{
+    color:  hsl(224, 21%, 14%);
+    font-weight: 800;
+}
+
+.message > span{
+    color: hsl(224, 21%, 14%);
+    font-weight: 700;
+}
+
+.message > span:hover{
+    cursor: pointer;
+    color: hsl(219, 85%, 26%);
+}
+
+#names:hover {
+    cursor: pointer;
+    color: hsl(219, 85%, 26%);
+}
+
+#chess-club{
+    color: hsl(219, 85%, 26%);
+    font-weight: 800;
+}
+
+#chess-club:hover{
+    cursor: pointer;
+}
+
+#the-message{
+    border: 1px solid hsl(219, 12%, 42%);
+    color: hsl(219, 12%, 42%);
+    padding: 10px;
+    border-radius: 5px;
+
+}
+
+#the-message:hover{
+    background-color:  hsl(205, 33%, 90%);
+    cursor: pointer;
+}
+#the-red{
+    color: red;
+}
+
+.comment{
+    display: inline-flex;
+    ;
+}
+
+.kimberly{
+    display: grid;
+    grid-template-columns: 12% 76% 12%;
+}
+
+@media only screen 
+    and (min-width: 0px)
+    and (max-width: 400px)
+ {
+
+    .main-container{
+        width: 350px;
+        height: auto;
+        padding-top: 10px;
+        padding-bottom: 10px;
+    }
+    
+    .body-div{
+        width: auto;
+    }
+
+    .notifications{
+        padding-top: 10px;
+        width: auto;
+    }
+
+    .images{
+        width: 60%;
+        height: auto;
+    }
+    
+    #chesspic{
+        width: 30px;
+        height: 30px;
+    }
+    
+}
